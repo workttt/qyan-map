@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cn.bing.com/qyan-map/blog</id>
+    <title>QYan Map Blog</title>
+    <updated>2024-04-24T03:20:25.770Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://cn.bing.com/qyan-map/blog"/>
+    <subtitle>QYan Map Blog</subtitle>
+    <icon>https://cn.bing.com/qyan-map/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[js工具类/局部打印]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/js工具类/局部打印</id>
+        <link href="https://cn.bing.com/qyan-map/blog/js工具类/局部打印"/>
+        <updated>2024-04-24T03:20:25.770Z</updated>
+        <summary type="html"><![CDATA[function printDiv(divId) {]]></summary>
+        <content type="html"><![CDATA[<p>function printDiv(divId) {
+var divContents = document.getElementById(divId).innerHTML;
+var printWindow = window.open('', '', 'height=400,width=800');
+printWindow.document.write('</p>');
+printWindow.document.write(divContents);
+printWindow.document.write('');
+printWindow.document.close();
+printWindow.print();
+}<p></p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[离线采集上传任务本地列表]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2024/03/26/离线采集上传任务本地列表</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2024/03/26/离线采集上传任务本地列表"/>
+        <updated>2024-03-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[记录所有的task的 offlineUploadTaskList ，]]></summary>
+        <content type="html"><![CDATA[<p>记录所有的task的 offlineUploadTaskList ，
+离线采集列表，“上传中” 的数据要在 offlineUploadTaskList 中， 通过文件名称匹配</p><ol><li>当状态是 上传中 实际已完成时，继续显示 上传中</li><li>上传中 ， 实际已失败、已中断时 显示 续传 按钮</li><li>续传直接用本身的task直接传，通过列表row中的文件名 去匹配 offlineUploadTaskList 中的task</li></ol><p>注意：
+offlineUploadTaskList 的key</p><p>用户Id + 门类id + fileName</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[调序]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2024/03/11/调序</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2024/03/11/调序"/>
+        <updated>2024-03-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[splice]]></summary>
+        <content type="html"><![CDATA[<p>splice</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[设想/1]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2024/03/06/设想/1</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2024/03/06/设想/1"/>
+        <updated>2024-03-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[vue3 + gin 弄一个录入档案的简单案例]]></summary>
+        <content type="html"><![CDATA[<p>vue3 + gin 弄一个录入档案的简单案例
+项目，案卷，文件列表
+电网建设门类的档案列表</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[预览档案组件]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2024年1月30日/预览档案组件</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2024年1月30日/预览档案组件"/>
+        <updated>2024-01-29T20:55:08.270Z</updated>
+        <summary type="html"><![CDATA[写一个公共的预览档案组件，]]></summary>
+        <content type="html"><![CDATA[<p>写一个公共的预览档案组件，
+使用vuex来管控各种数据
+组件放在使用页面的第一个层级
+或者有个通用的壳--档案相关组件
+扁平化来组合组件，不要嵌套到每个层级 -- previewFile  docFile</p><p>page
+h1
+table
+form
+arch-component</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2024年]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2024/01/01/2024年</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2024/01/01/2024年"/>
+        <updated>2024-01-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi]]></summary>
+        <content type="html"><![CDATA[<p>Hi </p><div class="codeBlockContainer_gqXM theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_ldrZ"><pre tabindex="0" class="prism-code language-text codeBlock_DZB9 thin-scrollbar"><code class="codeBlockLines_NUpS"><span class="token-line" style="color:#393A34"><span class="token plain">新年快乐啦</span><br></span></code></pre><div class="buttonGroup_Z3e5"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_yYOg" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_Ce3P"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ayO6"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>祝你和气致祥&nbsp;百花齐放，鸾凤和鸣&nbsp;福星高照，喜气盈门&nbsp;恭贺新春，招财进宝&nbsp;福享新春，福星高照&nbsp;迎春接福，福禄寿禧&nbsp;春光骀荡，荣华富贵&nbsp;国步龙腾，大展鸿图&nbsp;门凝瑞霭，家庭幸福&nbsp;户发春光，前途无量&nbsp;风光胜旧，前程似锦&nbsp;岁序更新，五福临门&nbsp;天翔紫燕，&nbsp;寿比南山&nbsp;地暖春风，南山献颂&nbsp;天高地阔，&nbsp;天赐纯假&nbsp;天开淑景，花开富贵&nbsp;空谈误国文定吉祥&nbsp;实干兴邦，招财有道&nbsp;国光蔚起，一本万利&nbsp;恭贺新禧，长揾长有&nbsp;飞黄腾达，生鸡盎然&nbsp;幸福美满，满园春色&nbsp;官运亨通，一团和气&nbsp;美梦连连，民夸盛会&nbsp;恭贺春节，国展宏图&nbsp;恭贺新喜，城乡比翼&nbsp;红红火火，&nbsp;山海扬辉&nbsp;二龙腾飞，春光普照&nbsp;百尺竿头，福气长临&nbsp;事业有成，国兴两制&nbsp;民众安康，户纳千祥&nbsp;国家安庆，泰然自若&nbsp;春回柳叶，天福华民&nbsp;赋献梅花，百家有福&nbsp;千祥云集.&nbsp;六合同春&nbsp;百福骈臻.&nbsp;四时平安&nbsp;人登寿域，天天开心&nbsp;世跻春台，笑口常开&nbsp;椒花献颂.&nbsp;幸福安康&nbsp;龙凤呈祥.&nbsp;好运连连&nbsp;龙门精神.&nbsp;太平有象&nbsp;百业兴旺.&nbsp;幸福无疆&nbsp;芳草迎春.&nbsp;龙缠启岁&nbsp;江山秀丽，&nbsp;凤纪书元&nbsp;人物风流，与山同静&nbsp;江山如画.&nbsp;教子有方&nbsp;吉星高照.&nbsp;母仪典范&nbsp;吉祥如意，新年快乐、万事如意、诸事顺利、心想事成、天天开心、幸福美满、阖家欢乐、福星高照、喜上眉梢、欢天喜地、财运亨通、吉祥如意、工作顺利、龙马精神、寿比南山、步步高升、福如东海、花好月圆、神采奕奕、飞黄腾达、升官发财、安居乐业、龙凤呈祥、四海增辉、鹏程万里、太平有象、幸福无疆、一表人才、博学多才、彬彬有礼、才貌双全、鹤立鸡群、翩翩少年、足智多谋、仪表不凡、气宇轩昂、眉清目秀、玉树临风、清新俊逸、品貌非凡、才貌双绝、惊才风逸、风流才子、雅人深致、城北徐公、堂堂正正、英俊潇洒、风流倜傥、才貌双全、逸群之才、仪表不凡、美如冠玉、人见人爱、花见花开、车见车栽、才高八斗、学富五车、貌似潘安、剑眉星眸、清新俊逸、挺鼻薄唇、古雕刻画、淡定优雅、探扇浅笑、俊美无涛、气宇轩昂、风度翩翩、仪表堂堂、貌若潘安、威风凛凛、落落大方、眉清目秀、相貌堂堂、明眸皓齿、英俊潇洒、威风凛凛、眉清目秀、相貌堂堂、风度翩翩、衣冠楚楚、城北徐公、明眸皓齿、掷果潘安、浓眉大眼、玉质金相、神采奕奕、英俊潇洒、文质彬彬、衣冠楚楚、风华月貌、玉树临风、面如冠玉、才貌双全、逸群之才、温文尔雅、淑人君子、品貌非凡、才貌双绝、惊才风逸、风流才子、雅人深致、万事顺意、幸福美满、官运亨通&nbsp;、美梦连连、吉祥如意、万事顺利、荣华富贵、一帆风顺、金玉满堂、五福临门、龙凤呈祥、龙门精神、百业兴旺、六畜兴旺、五谷丰登、喜上眉梢、锦绣前程、鹏程万里、事事顺利、生日快乐、合家欢乐、春风得意、前程似锦、大展鹏图、生意兴隆、马到功成、事业有成、天天开心、快乐永远、身体健康、万事如意、福如东海、寿比南山、幸福美满、心想事成、大吉大利、招财进宝、一帆风顺、福寿双全、三羊开泰、四季发财、五福临门、六六大顺，&nbsp;多财满家&nbsp;家肥屋润&nbsp;彩蝶翩翩&nbsp;余钱多多&nbsp;生意兴隆&nbsp;财源广进&nbsp;长命百岁&nbsp;福如东海&nbsp;寿比南山&nbsp;寿与天齐&nbsp;蒸蒸日上&nbsp;日新月异财源滚滚&nbsp;百年好合&nbsp;龙马精神&nbsp;开门大吉意气风发&nbsp;好事连连&nbsp;花开富贵&nbsp;文定吉祥，鸳鸯璧合&nbsp;姻缘相配&nbsp;誓约同心&nbsp;喜缔鸳鸯.&nbsp;缔结良缘&nbsp;盟结良缘&nbsp;白首成约&nbsp;鱼水和谐.&nbsp;缘订三生&nbsp;大吉大利&nbsp;丰财聚宝&nbsp;必定如意&nbsp;招财进宝&nbsp;金玉满堂&nbsp;恭喜发财&nbsp;马年大旺.&nbsp;万事如意&nbsp;事事顺心&nbsp;福寿安康&nbsp;笑口常开&nbsp;百事可乐&nbsp;吉祥如意&nbsp;步步高升&nbsp;登峰造极.&nbsp;一帆风顺&nbsp;身体健康&nbsp;学习进步&nbsp;工作顺利&nbsp;老如松柏&nbsp;喜气盈门&nbsp;福享新春&nbsp;吉庆有余&nbsp;迎春接福&nbsp;喜气洋洋&nbsp;恭贺新禧&nbsp;福寿安康&nbsp;岁岁平安&nbsp;大展鸿图&nbsp;大展经纶&nbsp;同业楷模.&nbsp;良禽择木&nbsp;德必有邻&nbsp;弘基永固&nbsp;华屋生辉新居鼎定&nbsp;堂构增辉&nbsp;瑞霭华堂&nbsp;堂开华厦美仑美奂&nbsp;才华潢溢&nbsp;名冠群伦&nbsp;前程万里&nbsp;名列前茅&nbsp;有志竟成&nbsp;良医济世&nbsp;仁术济众活人济世&nbsp;华陀再世&nbsp;出类拔萃&nbsp;前程万里鹏程万里&nbsp;鹏展之敬&nbsp;奉申赆敬&nbsp;急公好义造褔人群&nbsp;热心公益&nbsp;仁风广被&nbsp;博施济众&nbsp;心想事成&nbsp;合家欢乐&nbsp;开开心心&nbsp;生活幸福.&nbsp;家庭和睦&nbsp;事业有成&nbsp;幸福快乐&nbsp;年年有余&nbsp;青春常在&nbsp;马年吉祥&nbsp;横财就手&nbsp;前程似锦&nbsp;财运亨通&nbsp;飞黄腾达&nbsp;一本万利&nbsp;货如轮转&nbsp;客似云来&nbsp;猪笼入水&nbsp;财色兼收&nbsp;红光满面&nbsp;拾己救人&nbsp;义行可风&nbsp;春晖广被&nbsp;良母楷模&nbsp;淑德可风&nbsp;教子有方&nbsp;母仪典范&nbsp;德术兼备气贵平和&nbsp;情贵淡泊&nbsp;心宽神定&nbsp;恬淡无忧步步高升&nbsp;富贵逼人&nbsp;财运亨通&nbsp;财源广进&nbsp;日进斗金&nbsp;腰缠万贯&nbsp;财源滚滚&nbsp;发财致富&nbsp;祝贺发财&nbsp;招财进宝&nbsp;生财有道&nbsp;百年好合&nbsp;珠联璧合&nbsp;美梦成真&nbsp;万事大吉&nbsp;苦尽甜来.&nbsp;喜从天降&nbsp;得意洋洋&nbsp;和和美美&nbsp;天造地恭喜发财、一帆风顺、富贵双全、双喜临门、五福临门、六六大顺、十全十美、万事如意、福满门庭、万福临门、心想事成、吉星高照、福满人间、喜气临门、吉祥如意、万事亨通、万象更新、合家欢乐&nbsp;鹏程万里、门迎百福、瑞气盈门、旭日东升、和气生财、财源广进、出入平安、新年快乐、欣欣向荣&nbsp;美满幸福、和气致祥、鸾凤和鸣、喜气盈门、招财进宝、福星高照、福禄寿禧、荣华富贵、大展鸿图&nbsp;家庭幸福、前途无量、前程似锦新年了祝你们:和气致祥&nbsp;百花齐放，鸾凤和鸣&nbsp;福星高照，喜气盈门&nbsp;恭贺新春，招财进宝&nbsp;福享新春，福星高照&nbsp;迎春接福，福禄寿禧&nbsp;春光骀荡，荣华富贵&nbsp;国步龙腾，大展鸿图&nbsp;门凝瑞霭，家庭幸福&nbsp;户发春光，前途无量&nbsp;风光胜旧，前程似锦&nbsp;岁序更新，五福临门&nbsp;天翔紫燕，&nbsp;寿比南山&nbsp;地暖春风，南山献颂&nbsp;天高地阔，&nbsp;天赐纯假&nbsp;天开淑景，花开富贵&nbsp;空谈误国文定吉祥&nbsp;实干兴邦，招财有道&nbsp;国光蔚起，一本万利&nbsp;恭贺新禧，长揾长有&nbsp;飞黄腾达，生鸡盎然&nbsp;幸福美满，满园春色&nbsp;官运亨通，一团和气&nbsp;美梦连连，民夸盛会&nbsp;恭贺春节，国展宏图&nbsp;恭贺新喜，城乡比翼&nbsp;红红火火，&nbsp;山海扬辉&nbsp;二龙腾飞，春光普照&nbsp;百尺竿头，福气长临&nbsp;事业有成，国兴两制&nbsp;民众安康，户纳千祥&nbsp;国家安庆，泰然自若&nbsp;春回柳叶，天福华民&nbsp;赋献梅花，百家有福&nbsp;千祥云集.&nbsp;六合同春&nbsp;百福骈臻.&nbsp;四时平安&nbsp;人登寿域，天天开心&nbsp;世跻春台，笑口常开&nbsp;椒花献颂.&nbsp;幸福安康&nbsp;龙凤呈祥.&nbsp;好运连连&nbsp;龙门精神.&nbsp;太平有象&nbsp;百业兴旺.&nbsp;幸福无疆&nbsp;芳草迎春.&nbsp;龙缠启岁&nbsp;江山秀丽，&nbsp;凤纪书元&nbsp;人物风流，与山同静&nbsp;江山如画.&nbsp;教子有方&nbsp;吉星高照.&nbsp;母仪典范&nbsp;吉祥如意，新年快乐、万事如意、诸事顺利、心想事成、天天开心、幸福美满、阖家欢乐、福星高照、喜上眉梢、欢天喜地、财运亨通、吉祥如意、工作顺利、龙马精神、寿比南山、步步高升、福如东海、花好月圆、神采奕奕、飞黄腾达、升官发财、安居乐业、龙凤呈祥、四海增辉、鹏程万里、太平有象、幸福无疆、一表人才、博学多才、彬彬有礼、才貌双全、鹤立鸡群、翩翩少年、足智多谋、仪表不凡、气宇轩昂、眉清目秀、玉树临风、清新俊逸、品貌非凡、才貌双绝、惊才风逸、风流才子、雅人深致、城北徐公、堂堂正正、英俊潇洒、风流倜傥、才貌双全、逸群之才、仪表不凡、美如冠玉、人见人爱、花见花开、车见车栽、才高八斗、学富五车、貌似潘安、剑眉星眸、清新俊逸、挺鼻薄唇、古雕刻画、淡定优雅、探扇浅笑、俊美无涛、气宇轩昂、风度翩翩、仪表堂堂、貌若潘安、威风凛凛、落落大方、眉清目秀、相貌堂堂、明眸皓齿、英俊潇洒、威风凛凛、眉清目秀、相貌堂堂、风度翩翩、衣冠楚楚、城北徐公、明眸皓齿、掷果潘安、浓眉大眼、玉质金相、神采奕奕、英俊潇洒、文质彬彬、衣冠楚楚、风华月貌、玉树临风、面如冠玉、才貌双全、逸群之才、温文尔雅、淑人君子、品貌非凡、才貌双绝、惊才风逸、风流才子、雅人深致、万事顺意、幸福美满、官运亨通&nbsp;、美梦连连、吉祥如意、万事顺利、荣华富贵、一帆风顺、金玉满堂、五福临门、龙凤呈祥、龙门精神、百业兴旺、六畜兴旺、五谷丰登、喜上眉梢、锦绣前程、鹏程万里、事事顺利、生日快乐、合家欢乐、春风得意、前程似锦、大展鹏图、生意兴隆、马到功成、事业有成、天天开心、快乐永远、身体健康、万事如意、福如东海、寿比南山、幸福美满、心想事成、大吉大利、招财进宝、一帆风顺、福寿双全、三羊开泰、四季发财、五福临门、六六大顺，&nbsp;多财满家&nbsp;家肥屋润&nbsp;彩蝶翩翩&nbsp;余钱多多&nbsp;生意兴隆&nbsp;财源广进&nbsp;长命百岁&nbsp;福如东海&nbsp;寿比南山&nbsp;寿与天齐&nbsp;蒸蒸日上&nbsp;日新月异财源滚滚&nbsp;百年好合&nbsp;龙马精神&nbsp;开门大吉意气风发&nbsp;好事连连&nbsp;花开富贵&nbsp;文定吉祥，鸳鸯璧合&nbsp;姻缘相配&nbsp;誓约同心&nbsp;喜缔鸳鸯.&nbsp;缔结良缘&nbsp;盟结良缘&nbsp;白首成约&nbsp;鱼水和谐.&nbsp;缘订三生&nbsp;大吉大利&nbsp;丰财聚宝&nbsp;必定如意&nbsp;招财进宝&nbsp;金玉满堂&nbsp;恭喜发财&nbsp;马年大旺.&nbsp;万事如意&nbsp;事事顺心&nbsp;福寿安康&nbsp;笑口常开&nbsp;百事可乐&nbsp;吉祥如意&nbsp;步步高升&nbsp;登峰造极.&nbsp;一帆风顺&nbsp;身体健康&nbsp;学习进步&nbsp;工作顺利&nbsp;老如松柏&nbsp;喜气盈门&nbsp;福享新春&nbsp;吉庆有余&nbsp;迎春接福&nbsp;喜气洋洋&nbsp;恭贺新禧&nbsp;福寿安康&nbsp;岁岁平安&nbsp;大展鸿图&nbsp;大展经纶&nbsp;同业楷模.&nbsp;良禽择木&nbsp;德必有邻&nbsp;弘基永固&nbsp;华屋生辉新居鼎定&nbsp;堂构增辉&nbsp;瑞霭华堂&nbsp;堂开华厦美仑美奂&nbsp;才华潢溢&nbsp;名冠群伦&nbsp;前程万里&nbsp;名列前茅&nbsp;有志竟成&nbsp;良医济世&nbsp;仁术济众活人济世&nbsp;华陀再世&nbsp;出类拔萃&nbsp;前程万里鹏程万里&nbsp;鹏展之敬&nbsp;奉申赆敬&nbsp;急公好义造褔人群&nbsp;热心公益&nbsp;仁风广被&nbsp;博施济众&nbsp;心想事成&nbsp;合家欢乐&nbsp;开开心心&nbsp;生活幸福.&nbsp;家庭和睦&nbsp;事业有成&nbsp;幸福快乐&nbsp;年年有余&nbsp;青春常在&nbsp;马年吉祥&nbsp;横财就手&nbsp;前程似锦&nbsp;财运亨通&nbsp;飞黄腾达&nbsp;一本万利&nbsp;货如轮转&nbsp;客似云来&nbsp;猪笼入水&nbsp;财色兼收&nbsp;红光满面&nbsp;拾己救人&nbsp;义行可风&nbsp;春晖广被&nbsp;良母楷模&nbsp;淑德可风&nbsp;教子有方&nbsp;母仪典范&nbsp;德术兼备气贵平和&nbsp;情贵淡泊&nbsp;心宽神定&nbsp;恬淡无忧步步高升&nbsp;富贵逼人&nbsp;财运亨通&nbsp;财源广进&nbsp;日进斗金&nbsp;腰缠万贯&nbsp;财源滚滚&nbsp;发财致富&nbsp;祝贺发财&nbsp;招财进宝&nbsp;生财有道&nbsp;百年好合&nbsp;珠联璧合&nbsp;美梦成真&nbsp;万事大吉&nbsp;苦尽甜来.&nbsp;喜从天降&nbsp;得意洋洋&nbsp;和和美美&nbsp;天造地恭喜发财、一帆风顺、富贵双全、双喜临门、五福临门、六六大顺、十全十美、万事如意、福满门庭、万福临门、心想事成、吉星高照、福满人间、喜气临门、吉祥如意、万事亨通、万象更新、合家欢乐&nbsp;鹏程万里、门迎百福、瑞气盈门、旭日东升、和气生财、财源广进、出入平安、新年快乐、欣欣向荣&nbsp;美满幸福、和气致祥、鸾凤和鸣、喜气盈门、招财进宝、福星高照、福禄寿禧、荣华富贵、大展鸿图&nbsp;家庭幸福、前途无量、前程似锦献给所有人</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[vue2点击后组件滚动到底部]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2023/12/26/vue2点击后组件滚动到底部</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2023/12/26/vue2点击后组件滚动到底部"/>
+        <updated>2023-12-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[由于某些东西要事件执行之后（点击改变变量之类的，也可以watch变量）才出来，而且出来后还要滚动一下，不是很友好，所以加一个]]></summary>
+        <content type="html"><![CDATA[<p>由于某些东西要事件执行之后（点击改变变量之类的，也可以watch变量）才出来，而且出来后还要滚动一下，不是很友好，所以加一个
+this.$nextTick(() =&gt; {
+this.$refs.xxxx.scroll(0, 9999)
+})</p><p>拓展，某些东西切换，增加滚动回顶部的功能</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[借阅单证明附件]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2023/12/25/借阅单证明附件</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2023/12/25/借阅单证明附件"/>
+        <updated>2023-12-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[由于现场借阅默认生成一个借阅单号，且在未“保存”过和“送审批”的情况下，重新点击列表的借阅单号后端会返回一样的借阅单号。]]></summary>
+        <content type="html"><![CDATA[<p>由于现场借阅默认生成一个借阅单号，且在未“保存”过和“送审批”的情况下，重新点击列表的借阅单号后端会返回一样的借阅单号。
+前端增加锁判断
+①第一次进入借阅单？  doneInit
+②借阅单id为空？
+③根据查询的附件列表去请求删除附件</p><p>展示附件一闪而过的问题
+上传附件就会立马删除的问题</p><h3 class="anchor anchorWithStickyNavbar_ANLb" id="关键字">关键字<a href="#关键字" class="hash-link" aria-label="Direct link to 关键字" title="Direct link to 关键字">​</a></h3><p>借阅单id
+单号borrowOrder</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JS Date对象 格式化的两套函数]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2023/12/06/国产系统浏览器js日期格式化问题</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2023/12/06/国产系统浏览器js日期格式化问题"/>
+        <updated>2023-12-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[还是使用day.js比较好]]></summary>
+        <content type="html"><![CDATA[<p>还是使用day.js比较好</p><blockquote><p>UTC : getUTCXxx</p><p>本地时间 : getXxx</p></blockquote><div class="codeBlockContainer_gqXM theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_ldrZ"><pre tabindex="0" class="prism-code language-text codeBlock_DZB9 thin-scrollbar"><code class="codeBlockLines_NUpS"><span class="token-line" style="color:#393A34"><span class="token plain">function formatTimestamp(timestamp) {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    // 手动加东八区的时区毫秒数 8 * 3600 * 1000 = 28800000 </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    var date = new Date(timestamp + 28800000);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    var year = date.getUTCFullYear();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    var month = date.getUTCMonth() + 1; // getUTCMonth 返回的月份从 0 开始</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    var day = date.getUTCDate();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    var hours = date.getUTCHours();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    var minutes = date.getUTCMinutes();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    var seconds = date.getUTCSeconds();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    // 保证月、日、时、分、秒都是两位数</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    month = month &lt; 10 ? '0' + month : month;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    day = day &lt; 10 ? '0' + day : day;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    hours = hours &lt; 10 ? '0' + hours : hours;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    minutes = minutes &lt; 10 ? '0' + minutes : minutes;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    seconds = seconds &lt; 10 ? '0' + seconds : seconds;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">console.log(formatTimestamp(1701881375432))</span><br></span></code></pre><div class="buttonGroup_Z3e5"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_yYOg" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_Ce3P"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ayO6"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content>
+        <category label="js" term="js"/>
+        <category label="日期时间" term="日期时间"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[24-04/档案模板]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/2023/06/20/24-04/档案模板</id>
+        <link href="https://cn.bing.com/qyan-map/blog/2023/06/20/24-04/档案模板"/>
+        <updated>2023-06-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[fondsId	 全宗ID]]></summary>
+        <content type="html"><![CDATA[<p>fondsId	 全宗ID
+userId</p><p>TableType 列表类型
+dataType  库类型
+archiveTypeId  门类ID</p><p>/archiveWarehouse/volume/getLayoutDetail
+/archiveWarehouse/project/getLayoutDetail  界面定义
+fondsId	string	Y	全宗ID
+archiveTypeId	String	是	左边树节点ID对应门类ID</p><p>/archiveWarehouse/project/saveProject
+/archiveWarehouse/volume/saveVolume</p><p>/archiveWarehouse/project/getProjectDetailInfo   项目的界面信息</p><p>/archiveWarehouse/project/getProjectPage   项目列表</p><p>/archiveWarehouse/project/queryProjListByArchTypeId    门类的项目列表接口</p><p>复制项目</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/welcome</id>
+        <link href="https://cn.bing.com/qyan-map/blog/welcome"/>
+        <updated>2021-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p><p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p><p>Regular blog authors can be added to <code>authors.yml</code>.</p><p>The blog post date can be extracted from filenames, such as:</p><ul><li><code>2019-05-30-welcome.md</code></li><li><code>2019-05-30-welcome/index.md</code></li></ul><p>A blog post folder can be convenient to co-locate blog post images:</p><p><img loading="lazy" alt="Docusaurus Plushie" src="/qyan-map/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_foIR"></p><p>The blog supports tags as well!</p><p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
+        <author>
+            <name>Sébastien Lorber</name>
+            <uri>https://sebastienlorber.com</uri>
+        </author>
+        <author>
+            <name>Yangshun Tay</name>
+            <uri>https://github.com/yangshun</uri>
+        </author>
+        <category label="facebook" term="facebook"/>
+        <category label="hello" term="hello"/>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MDX Blog Post]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/mdx-blog-post</id>
+        <link href="https://cn.bing.com/qyan-map/blog/mdx-blog-post"/>
+        <updated>2021-08-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></summary>
+        <content type="html"><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p><div class="theme-admonition theme-admonition-tip alert alert--success admonition_Wx_f"><div class="admonitionHeading_enyy"><span class="admonitionIcon_H6FM"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_Bn82"><p>Use the power of React to create interactive blog posts.</p><div class="language-js codeBlockContainer_gqXM theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_ldrZ"><pre tabindex="0" class="prism-code language-js codeBlock_DZB9 thin-scrollbar"><code class="codeBlockLines_NUpS"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre><div class="buttonGroup_Z3e5"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_yYOg" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_Ce3P"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_ayO6"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><button>Click me!</button></div></div>]]></content>
+        <author>
+            <name>Sébastien Lorber</name>
+            <uri>https://sebastienlorber.com</uri>
+        </author>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Long Blog Post]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/long-blog-post</id>
+        <link href="https://cn.bing.com/qyan-map/blog/long-blog-post"/>
+        <updated>2019-05-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
+        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p><p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <author>
+            <name>Endilie Yacop Sucipto</name>
+            <uri>https://github.com/endiliey</uri>
+        </author>
+        <category label="hello" term="hello"/>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[First Blog Post]]></title>
+        <id>https://cn.bing.com/qyan-map/blog/first-blog-post</id>
+        <link href="https://cn.bing.com/qyan-map/blog/first-blog-post"/>
+        <updated>2019-05-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <author>
+            <name>Gao Wei</name>
+            <uri>https://github.com/wgao19</uri>
+        </author>
+        <category label="hola" term="hola"/>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+</feed>
