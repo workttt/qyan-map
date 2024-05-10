@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_doc_docusaurus=self.webpackChunkapi_doc_docusaurus||[]).push([[3152],{8701:a=>{a.exports=JSON.parse('{"label":"js","permalink":"/qyan-map/blog/tags/js","allTagsPath":"/qyan-map/blog/tags","count":1,"unlisted":false}')}}]);
